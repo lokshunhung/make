@@ -2,6 +2,7 @@ SHELL := /bin/bash
 MAKEFLAGS += --warn-undefined-variables
 MAKEFLAGS += --no-builtin-variables
 MAKEFLAGS += --no-builtin-rules
+.SUFFIXES:
 .DELETE_ON_ERROR:
 .SECONDARY:
 .SECONDEXPANSION:
