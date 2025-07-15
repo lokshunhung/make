@@ -6,9 +6,11 @@ include _preamble.mk *.inc.mk
 default: help
 
 .PHONY: push
-push: ## push code to git remote
+## Push code to git remote
+push:
 	git push
 
 .PHONY: pull
-pull: ## rebase pull from git remote, stash working directory
+## Rebase pull from git remote, stash working directory
+pull:
 	git pull --rebase --autostash

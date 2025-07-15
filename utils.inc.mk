@@ -1,7 +1,8 @@
 .PHONY: --force
 --force: ;
 
-print\:%: ## print Makefile variable
+## Print Makefile variable
+### Example: make print:MAKEFILE_LIST
 print\:%: --force
 	@echo $*=$($*)
 	@echo '  origin = $(origin $*)'
